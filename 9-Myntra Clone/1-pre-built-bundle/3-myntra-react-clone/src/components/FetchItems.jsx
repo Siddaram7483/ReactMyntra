@@ -15,7 +15,8 @@ const FetchItems = () => {
     const controller = new AbortController();
     const signal = controller.signal;
 
-    fetch("http://localhost:8080/items", { signal })
+    fetch("https://react-myntra-omega.vercel.app/", { signal })
+      //http://localhost:8080/items
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
