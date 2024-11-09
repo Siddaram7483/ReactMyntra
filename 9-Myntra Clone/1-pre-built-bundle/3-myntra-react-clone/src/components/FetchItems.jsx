@@ -15,7 +15,7 @@ const FetchItems = () => {
     const controller = new AbortController();
     const signal = controller.signal;
 
-    fetch("https://react-myntra-omega.vercel.app/", { signal })
+    fetch("http://localhost:8080/items", { signal })
       //http://localhost:8080/items
       .then((res) => {
         if (!res.ok) {
